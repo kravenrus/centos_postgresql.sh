@@ -1,4 +1,6 @@
 # Инструкция по использованию скрипта
+
+    su
 Перед началом работы необходимо установить **git**
 
     sudo dnf install -y git
@@ -8,6 +10,8 @@
 Делаем скрипт исполняемым
 
     chmod +x ./postgresql.sh
+    
+    cd centos_postgresql.sh
 Запуск скрипта
 
     ./postgresql.sh
