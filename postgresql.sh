@@ -50,7 +50,7 @@ function install {
 	# Optionally change port the PostgreSQL server
 	echo -en '\e[0m'; read -p $'\e[0mChange default PostgreSQL port (5432)? \e[4m[Yy/Nn]\e[24m: \e[33m' answer
 	if [[ "$answer" = "Y" || "$answer" = "y" ]]; then echo -en '\e[0m'; read -p $'Please enter the port: \e[33m' port; fi
-	if [[ "$answer" = "N" || "$answer" = "n" ]]; then port = 5432; fi
+	if [[ "$answer" = "N" || "$answer" = "n" ]]; then port=5432; fi
 	sudo sed -i -e 's/#port = 5432/port = '$port'/' /var/lib/pgsql/13/data/postgresql.conf > /dev/null 2>&1
 	sudo systemctl restart postgresql-13 > /dev/null 2>&1
 }
