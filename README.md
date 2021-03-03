@@ -26,3 +26,7 @@
 Вывод созданных баз данных **(на месте PORT - порт на котором запущен сервер)**
 
     sudo -i -u postgres psql -p PORT -c 'select * from pg_database;'
+
+## Демонстрация
+
+![Farmers Market Finder Demo](demo.gif)
