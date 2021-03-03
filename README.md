@@ -11,13 +11,12 @@
 Скачивание данного репозитория
 
     git clone https://github.com/kravenrus/centos_postgresql.sh.git
-Делаем скрипт исполняемым
-
-    chmod +x ./postgresql.sh
 Переход в каталог со скаченным репозиторием
 
     cd centos_postgresql.sh
+Делаем скрипт исполняемым
 
+    chmod +x ./postgresql.sh
 Запуск скрипта
 
     ./postgresql.sh
