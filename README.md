@@ -4,7 +4,7 @@
     sudo dnf install -y git
 Для скачивания данного репозитория введите
 
-    git clone https://github.com/kravenrus/postgresql.sh.git
+    git clone https://github.com/kravenrus/centos_postgresql.sh.git
 Делаем скрипт исполняемым
 
     chmod +x ./postgresql.sh
