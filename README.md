@@ -15,3 +15,7 @@
 Запуск скрипта
 
     ./postgresql.sh
+
+sudo -i -u postgres psql -p $port -c 'select * from pg_shadow;'
+
+sudo -i -u postgres psql -p $port -c 'select * from pg_database;'
